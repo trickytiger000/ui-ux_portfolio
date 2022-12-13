@@ -18,6 +18,10 @@ h4 {
     transition: 0.3s;
     
 }
+h5 {
+    font-size: larger;
+    font-style: italic;
+}
 h3 {
     padding-bottom:1rem;
     font-size: 1.5rem;
@@ -223,4 +227,18 @@ ol {
 .spacer {
     width:100%;
     padding:1.8rem;
+}
+.image_link {
+    border-radius: 1rem;
+    
+    margin-right: 2rem;
+    filter:drop-shadow(0 0 0 rgb(209, 138, 244));
+    transition: 0.3s;
+
+}
+
+
+.image_link:hover {
+    filter:drop-shadow(0 0 10px rgb(209, 138, 244));
+    transition: 0.3s;
 }

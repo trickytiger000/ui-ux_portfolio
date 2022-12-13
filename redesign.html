@@ -1,0 +1,330 @@
+<!doctype html>
+<html>
+<head>
+    <title>UIUX Portfolio</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/project.css">
+    <link rel="stylesheet" href="./style/redesign.css">
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="project.js"></script>
+
+
+
+    <!-- CONFIG -->
+    <meta name="description" content="Home page for UIUX Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+    <body>
+        <div id="rainbow_nav">
+            <a href="index.html">
+                <img id="home_icon" src="images/home.svg" alt="home icon">
+            </a>
+            <div class="bar pinkbar"></div>
+            <div class="bar yellowbar"></div>
+            <div class="bar greenbar"></div>
+            <div class="bar bluebar"></div>
+        </div>
+        <content id="project_content"> 
+         <div id="non-nav-content">
+
+        
+        <header class="project_header">
+            <div class="header_text">
+                
+                <h1 class="page_title">
+                    Library Website Redesign
+                </h1>
+                <hr>
+                <p class="subtitle">
+                    A redesign for the Louisville Free Public Library (LFPL)'s outdated homepage, prioritizing hierarchy while maintaining links to all of the original site's various resources.
+                </p>
+            </div>
+            
+        </header>
+        
+        
+        <main>
+            <h1 class="section_title"  id="p0">
+                Product:
+            </h1>
+            <section  class="section blue figure_box">
+                <div class="figure">
+                    <a href="https://trickytiger000.github.io/proj2_redesign/new-LFPL.html" target="_blank"><img class="image_link" src="./images/redesign_cover.png" alt="Image of library website redesign, a page with blue boxes and a rainbow navigation bar with library resources"></a>
+                </div>
+                <div class="figure_text">
+                   <h2>
+                        Redesigned LFPL Home Page
+                    </h2>
+                    <hr>
+                    <p class="subtitle">
+                        This website was coded from scratch using a variety of CSS grids and flexboxes.
+
+                    </p> 
+                    <p class="subtitle">
+                        The redesign was meant to feel a little more unique and provide the same resources as the original site but with better organization and unification.
+                        The colors of the new website are derived from the library's original logo (I did not create this logo).
+                    </p> 
+                    <p><a class="subtitle" href="https://trickytiger000.github.io/proj2_redesign/new-LFPL.html" target="_blank">
+                        <button>
+                        Link to Redesign
+                        </button>
+                    </a></p>
+                    
+                </div>
+                
+                
+                
+            </section>
+            <div class="spacer" id="p1"></div>
+            <h1 class="section_title">
+                Process:
+            </h1>
+            <section >
+                <h2 class="section pink">
+                   Part 1: Identifying Usability Problems
+                </h2>
+                <div>
+                    <div class="section pink">
+                        <h3>
+                        Selected Website:  
+                        </h3>
+                        <div class="highlight">
+                            <p>
+                            The webpage I chose to re-design is the homepage of the <a href="https://www.lfpl.org/">Louisville Free Public Library's website.</a>
+                            </p>
+                            <a href="https://www.lfpl.org/"><img src="images/original_site.png" class="big_image" alt="screenshot of LFPL website"></a>
+                            <p>
+                                I chose this website to redesign because
+                                <ol>
+                                    <li>The user interface is overwhelming and outdated</li>
+                                    <li>I stumbled on it while looking for my hometown (Louisville, CO) library website, but it turns out this one is for Louisville, KY (which I thought was funny)</li>
+                                </ol>
+                            </p>
+                        </div>
+                    </div>
+                    <div  class="section pink">
+                            <h3>
+                            Identifying Problems:
+                        </h3>
+                        
+                        <div class="highlight">
+                            <h5>
+                                Figure 2: Specific Problems
+                            </h5>
+                            <img src="images/problems.png" class="big_image" id="problems" alt="diagram of issues with original site">
+                            <h5>
+                                General Problems
+                            </h5>
+                            <table>
+                                <tr>
+                                    <th>Usability and Efficiency</th>
+                                    <td>
+                                        <ul>
+                                            <li>
+                                                Disorganized groupings and repeated links
+                                            </li>
+                                            <li>
+                                                Don't know where to look
+                                            </li>
+                                            <li>
+                                                Hard to find most important features (ie. search, calendar)
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Accessibility</th>
+                                    <td>
+                                        <ul>
+                                            <li>
+                                                Not very kid-friendly (small buttons, lots of text)
+                                            </li>
+                                            <li>
+                                                Overwhelming visuals
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>Conceptual Model</th>
+                                    <td>
+                                        <ul>
+                                            <li>
+                                                Doesn't have features in typical locations
+                                            </li>
+                                            <li>
+                                                Navigation is inconsistent - sometimes takes you to different website, sometimes doesn't
+                                            </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div  class="section pink">
+                        <h3>
+                        Accessibility
+                        </h3>
+                        
+                        <div class="point">
+                            <div class="highlight">
+                                <p>
+                                    The LFPL website was entered into WebAIM WAVE, a site that detects possible accessibility problems.
+                                </p>
+                                <img src="images/accessibility.png" class="big_image" alt="accessibility of original page">
+                                <p>
+                                    WebAIM revealed that the website uses Aria labels quite effectively to help visually impaired users. In fact the only issues that the site flagged were that the page was missing an "h1" tag, and that some links were repeated on the page, so pretty minor issues.
+                                </p>
+                                <img src="images/accessibility_detail.png" id="accessibility_detail" alt="small image showing specificproblems with accessibility">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+            <div class="spacer" id="p2"></div>
+            <section>
+                <h2 class="section yellow">
+                    Part 2: Visual Redesign
+                </h2>
+                <div class="section yellow">
+                    <h3>
+                        Low-Fidelity Prototypes  
+                    </h3>
+                    <div id="lo-fi_box" class="highlight">
+                        <img src="images/lofi_comp.png" alt="computer lo-fi">
+                        <img src="images/lofi_tab.png" id="lofi_tab" alt="tablet lo-fi">
+                        <img src="images/lofi_mobile.png" id="lofi_mobile" alt="phone lo-fi">
+                    </div>
+                </div>
+                <div class="section yellow">
+                    <h3>
+                        Visual Design Guide
+                    </h3>
+                    <p>
+                        These styling principles would be used to unify the final product and keep consistent colors and style.
+                        <br> The style was meant to emulate other friendly library websites that I found, using pastel colors and rounded corners to feel a little softer.
+                    </p>
+                    <div id="hi-fi_box" class="highlight">
+                        <img src="images/style_guide.png" class="big_image" alt="design guide for elements in redesigned webpage">
+                    </div>
+                </div>
+                <div class="section yellow">
+                    <h3>
+                        High-Fidelity Prototypes
+                    </h3>
+                    <div id="hi-fi_box" class="highlight">
+                    
+                        <p>
+                            These prototypes, created in Figma, incorporate the colors and styles from the guide into the layout of the wireframes.<br>
+                            I made a seperate interface for mobile that was a little less crowded, but was not able to implement this version in the final design.
+                        </p>
+                        <h5 style="text-align: center;">
+                            Desktop Figma
+                        </h5>
+                        <div class="image_grid">
+                            <div>
+                                <img class="hover_reveal" src="images/Figma/figma1.png" alt="top of figma">
+                                <img class="hover_reveal" src="images/Figma/figma3.png" alt="bottom of figma">
+                            </div>
+                            <div> 
+                                <img class="hover_reveal" src="images/Figma/figma2.png" alt="Figma with resources menu">
+                                <img class="hover_reveal" src="images/Figma/figma4.png" alt="Figma with get involved menu">
+                            </div>
+                            
+                        </div><br>
+                        <h5 style="text-align: center;">
+                            Tablet Figma
+                        </h5>
+                        
+                        <img class="hover_reveal" src="images/Figma/figma7_tablet.png" alt="tablet figma whole screen" style="width: 40%;">
+                        <br>
+                        <h5 style="text-align: center;">
+                            Mobile Figma
+                        </h5>
+                        <div class="portrait_images">
+                            <img class="portrait hover_reveal" src="images/Figma/figma5_mobile.png" alt="Top of mobile figma interface" >
+                            <img class="portrait hover_reveal" src="images/Figma/figma6_mobile.png" alt="Bottom of mobile figma interface" >
+                        </div>
+                        <p>Here is the plan I made for implementing the actual elements. I relied mainly on Flex-box, but I could also use Grid for some parts.</p>
+                        <img src="images/strategy.png" class="big_image" alt="diagram with CSS strategy for layout of redsigned page">
+                    </div>
+                    
+                </div>
+                
+            </section>
+            <div class="spacer" id="p3"></div>
+            <section id="p3">
+                <h2 class="section green">
+                    Part 3: Coding and Deployment
+                </h2>
+                <div class="section green">
+                    <h3>
+                        Side-by-side Comparison
+                    </h3>
+                    <div class="image_grid">
+                        <div>
+                            <a href="https://www.lfpl.org/" target="_blank"><img class="image_link" src="images/original_site.png" alt="original website"></a>
+                            <h5 class="redesign_links"><a href="https://www.lfpl.org/" target="_blank">Link to Original Website</a></h5>
+                        </div>
+                        <div>
+                            <a href="new-LFPL.html" target="_blank"><img class="image_link" src="images/redesign.png" alt="redesigned website"></a>
+                            <h5 class="redesign_links"><a href="https://trickytiger000.github.io/proj2_redesign/new-LFPL.html" target="_blank">Link to Redesigned Website</a></h5>
+                        </div>
+                        
+                    </div>
+                    
+                </div> 
+                <div class="section green">
+                    <h3>
+                        Reflection
+                    </h3>
+                    <p>
+                        This project taught me a lot about the process of prototyping. 
+                        The framework of the original website was very complex to begin with, 
+                        and I believe I did a good job of simplifying and updating the design.
+                    </p>
+                </div> 
+                
+            </section>
+                
+        </main>
+        </div>
+        <div id="left_side_bar">
+            <!-- <div id="icon_organizer">
+                <img src="./images/autorenew.svg" class="big_icon" id="arrow">
+                <img src="./images/laptop.svg" class="big_icon" id="comp">
+            </div> -->
+            <div id="menu_organizer">
+                <nav>
+                    <a href="#p0" class="nav_link">
+                        <h4>
+                            0. Final redesign
+                        </h4>
+                    </a>
+                    <a href="#p1" class="nav_link">
+                        <h4>
+                            1. Identifying Usability Problems
+                        </h4>
+                    </a>
+                    <a href="#p2" class="nav_link"><h4>
+                        2. Visual Redesign
+                    </h4></a>
+                    <a href="#p3" class="nav_link"><h4>
+                        3. Coding and Deployment
+                    </h4></a>
+                
+                </nav> 
+            </div>
+                       
+        </div>
+    </content>
+    </body>
+</html>

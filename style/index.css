@@ -52,6 +52,10 @@ footer {
     text-align: center;
     margin: 1rem;
 }
+a, a::after {
+    color:rgb(118, 14, 170);
+}
+
 
 /* ----------------------------------------------------------home */
 .container {
@@ -126,7 +130,7 @@ footer {
 .home_header {
     background: rgb(209, 138, 244);
     padding: 5rem;
-    height: 75vh;
+    min-height: 75vh;
     display: grid;
     grid-template-columns: 60% 40%;
 }
@@ -142,6 +146,15 @@ footer {
 }
 #title {
     font-size: 5rem;
+}
+#intro_text {
+    font-size: large;
+}
+#contact {
+    background-color: rgb(255, 213, 108);
+}
+#contact:hover {
+    color: black;
 }
 
 

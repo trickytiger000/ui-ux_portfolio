@@ -1,0 +1,44 @@
+#accessibility_detail {
+    width: 30%;
+}
+iframe {
+    margin:auto;
+}
+.image_grid {
+   display: flex;
+   flex-direction: row;
+   
+}
+.portrait {
+    width: 25%;
+}
+.portrait_images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.redesign_links {
+    padding: 1rem;
+    text-align: center;
+}
+
+#lofi_tab {
+    height:90vh;
+    
+}
+#lofi_mobile {
+    height:90vh;
+}
+#hi-fi_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hover_reveal {
+    filter: brightness(50%);
+    transition: 0.3s;
+}
+.hover_reveal:hover {
+    filter: brightness(100%);
+    transition: 0.3s;
+}
